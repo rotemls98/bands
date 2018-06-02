@@ -1,0 +1,9 @@
+.bands-list {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.item-link {
+    text-decoration: none;
+}
