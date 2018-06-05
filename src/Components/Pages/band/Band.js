@@ -6,6 +6,8 @@ const propTypes = {
     band : PropTypes.object.isRequired
 }
 
+
+
 export default class Band extends Component {
 
 

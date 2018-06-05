@@ -4,7 +4,7 @@ import Tabs from '@material-ui/core/Tabs/Tabs';
 import {HomeTab, BandsTab, AboutTab} from "./AppTabs";
 import './header.css';
 
-
+// very ugly
 const getValue = () => {
     const url = window.location.href;
     if (url.includes("bands")) {
@@ -17,6 +17,7 @@ const getValue = () => {
         return 0;
     }
 }
+
 
 export default class Header extends Component {
     state = {

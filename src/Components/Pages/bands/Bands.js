@@ -1,22 +1,18 @@
-import React, {Component, Fragment} from "react";
-import {Route} from "react-router-dom";
-import BandsList from "../bandsList/BandsList";
-import Band from "../band/Band";
+import React, {Component} from "react";
+import BandlistContainer from "../bandsList/BandlistContainer";
 import "./bands.css";
 
 
 export default class Bands extends Component {
 
     render() {
-        const {bands, match} = this.props;
+        const {match} = this.props;
         return (
             <div>
+                {/*<h1>Bands list</h1>*/}
                 <div></div>
-                <div>
-                    <h1>Bands list</h1>
-                    <div className="list_container">
-                        <BandsList bands={bands} match={match}/>
-                    </div>
+                <div className="list_container">
+                    <BandlistContainer match={match}/>
                 </div>
                 <div></div>
             </div>
