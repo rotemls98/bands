@@ -17,10 +17,10 @@ class App extends Component {
         <Router>
           <Fragment>
               <Header/>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/bands" component={Bands}/>
-              <Route path={"/bands/:id"} component={BandContainer}/>
-              <Route path="/about" component={About}/>
+                  <Route exact path="/" component={Home}/>
+                  <Route exact path="/bands" component={Bands}/>
+                  <Route path={"/bands/:id"} component={BandContainer}/>
+                  <Route path="/about" component={About}/>
           </Fragment>
         </Router>
       </div>

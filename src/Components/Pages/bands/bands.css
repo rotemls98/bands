@@ -4,8 +4,34 @@
 }
 
 .list_container {
-    display: flex;
-    justify-content: center;
+    max-width: calc(100% / 3);
+    width: 100%;
 }
 
+.bands-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
 
+.side {
+    max-width: 25%;
+    width: 100%;
+    background-color: white;
+}
+
+.left-side {
+    display: flex;
+    box-shadow: 1.1px -1px #80808061;
+}
+
+.right-side {
+    box-shadow: -1.1px -1px #80808061 ;
+}
+
+.guitar {
+    background-image: url(https://sc1.musik-produktiv.com/pic-010098330xl/mayones-regius-core-classic-7-dirty-purple.jpg);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}

@@ -1,0 +1,10 @@
+
+.songs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-expansion {
+    max-width: 50%;
+}
