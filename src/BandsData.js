@@ -7,19 +7,19 @@ export const bandsData = [
         songs: [
             {
                 name: "Radioactive",
-                url: ""
+                url: "https://www.youtube.com/watch?v=ktvTqknDobU"
             },
             {
                 name: "Believer",
-                url: ""
+                url: "https://www.youtube.com/watch?v=IhP3J0j9JmY"
             },
             {
                 name: "What ever it takes",
-                url: ""
+                url: "https://www.youtube.com/watch?v=gOsM-DYAEhY"
             },
             {
                 name: "Thunder",
-                url: ""
+                url: "https://www.youtube.com/watch?v=fKopy74weus"
             },
         ]
 
@@ -31,11 +31,11 @@ export const bandsData = [
         songs: [
             {
                 name: "Numb",
-                url: ""
+                url: "https://www.youtube.com/watch?v=kXYiU_JCYtU"
             },
             {
                 name: "In the End",
-                url: ""
+                url: "https://www.youtube.com/watch?v=eVTXPUF4Oz4"
             }
         ]
     },
@@ -68,7 +68,13 @@ export const bandsData = [
     {
         id: 5,
         name: "Kings of Leon",
-        image: "https://hdwallsource.com/img/2016/1/kings-of-leon-band-wallpaper-52682-54399-hd-wallpapers.jpg"
+        image: "https://hdwallsource.com/img/2016/1/kings-of-leon-band-wallpaper-52682-54399-hd-wallpapers.jpg",
+        songs: [
+            {
+                name: "Sex on Fire",
+                url: "https://www.youtube.com/watch?v=RF0HhrwIwp0"
+            }
+        ]
     },
     {
         id: 6,
@@ -77,7 +83,7 @@ export const bandsData = [
         songs: [
             {
                 name: "Smells like teen spirit",
-                url: ""
+                url: "https://www.youtube.com/watch?v=hTWKbfoikeg"
             },
             {
                 name: "In bloom",

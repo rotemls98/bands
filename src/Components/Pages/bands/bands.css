@@ -4,8 +4,11 @@
 }
 
 .list_container {
-    max-width: calc(100% / 3);
-    width: 100%;
+    background-color: #9e9e9e26;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bands-container {

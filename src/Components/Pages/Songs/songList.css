@@ -7,4 +7,13 @@
 
 .song-expansion {
     max-width: 50%;
+    width: 100%;
+}
+
+.player {
+    margin: auto;
+}
+
+.hidden-expand {
+    display: none;
 }

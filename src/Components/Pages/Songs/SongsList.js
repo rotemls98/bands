@@ -4,6 +4,9 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import YouTubePlayer from 'react-player/lib/players/YouTube'
+import Song from "./Song";
+
 import "./songList.css";
 
 const propTypes = {
@@ -12,23 +15,21 @@ const propTypes = {
 
 export default class SongsList extends Component {
 
+
+
     render() {
         const { songs } = this.props;
         return (
             <div className={"songs-container"}>
                 {
                     songs.map((song, i) => (
-                        <ExpansionPanel key={i} className={"song-expansion"}>
+                        <ExpansionPanel key={i} className="song-expansion">
                             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon/>}>
                                 <div>{song.name}</div>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
-                                <div>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate fuga ipsum
-                                    ratione ut. Eveniet excepturi explicabo ipsa quidem quisquam sequi sint unde voluptates.
-                                    Amet aut corporis culpa cumque cupiditate debitis deleniti doloremque doloribus ducimus
-                                    explicabo fuga hic id impedit in ipsa ipsam iste laudantium libero.
-                                </div>
+                                {/*<YouTubePlayer className="player" controls url={song.url}/>*/}
+                                <Song className="player" url={song.url}/>
                             </ExpansionPanelDetails>
                         </ExpansionPanel>)
                     )

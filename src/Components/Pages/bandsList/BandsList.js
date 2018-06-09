@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -18,16 +18,16 @@ export default class BandsList extends Component {
 
     render() {
         const {match} = this.props;
-        return <List className="bands-list">
+        return <List disablePadding className="bands-list">
             {this.props.bands.map(band => (
-                <div key={band.id}>
+                <Fragment key={band.id}>
                     <Link className="item-link" to={`${match.url}/${band.id}`}>
                         <ListItem button>
                             <ListItemText primary={band.name}/>
                         </ListItem>
                     </Link>
                     <Divider/>
-                </div>
+                </Fragment>
             ))}
         </List>
     }
